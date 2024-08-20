@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+
+<body>
+ <div class="index">
+	<h1>Predictive & Preventive Maintenance System</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+     <form action="{{ url_for('index') }}" method="POST">
+        <input type="text" name="engine_id" placeholder="Engine ID" required="required" />
+        <input type="text" name="n_cycles" placeholder="Cycles" required="required" />  
+        <input type="text" name="OP1" placeholder="Opearting Setting 1" required="required" />
+        <input type="text" name="OP2" placeholder="Opearting Setting 2" required="required" />
+        <input type="text" name="OP3" placeholder="Opearting Setting 3" required="required" />
+        <input type="text" name="SENSOR1" placeholder="Sensor 1" required="required" />
+        <input type="text" name="SENSOR2" placeholder="Sensor 2" required="required" />
+        <input type="text" name="SENSOR3" placeholder="Sensor 3" required="required" />
+        <input type="text" name="SENSOR4" placeholder="Sensor 4" required="required" />
+        <input type="text" name="SENSOR5" placeholder="Sensor 5" required="required" />
+        <input type="text" name="SENSOR6" placeholder="Sensor 6" required="required" />
+        <input type="text" name="SENSOR7" placeholder="Sensor 7" required="required" />
+        <input type="text" name="SENSOR8" placeholder="Sensor 8" required="required" />
+        <input type="text" name="SENSOR9" placeholder="Sensor 9" required="required" />
+        <input type="text" name="SENSOR10" placeholder="Sensor 10" required="required" />
+        <input type="text" name="SENSOR11" placeholder="Sensor 11" required="required" />
+        <input type="text" name="SENSOR12" placeholder="Sensor 12" required="required" />
+        <input type="text" name="SENSOR13" placeholder="Sensor 13" required="required" />
+        <input type="text" name="SENSOR14" placeholder="Sensor 14" required="required" />
+        <input type="text" name="SENSOR15" placeholder="Sensor 15" required="required" />
+        <input type="text" name="SENSOR16" placeholder="Sensor 16" required="required" />
+        <input type="text" name="SENSOR17" placeholder="Sensor 17" required="required" />
+        <input type="text" name="SENSOR18" placeholder="Sensor 18" required="required" />
+        <input type="text" name="SENSOR19" placeholder="Sensor 19" required="required" />
+        <input type="text" name="SENSOR20" placeholder="Sensor 20" required="required" />
+        <input type="text" name="SENSOR21" placeholder="Sensor 21" required="required" />
+        <input type="text" name="SENSOR22" placeholder="Sensor 22" required="required" />
+        <input type="text" name="SENSOR23" placeholder="Sensor 23" required="required" />  
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <h2>Predicted Remaining Useful Life (RUL)</h2>
+    {{ predicted_val_RUL | safe }}
+ </div>
+</body>
+</html>
